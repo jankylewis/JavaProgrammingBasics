@@ -1,4 +1,4 @@
-package app;
+package abstractFactoryDp.app;
 
 import abstractFactoryDp.buttons.IButton;
 import abstractFactoryDp.checkboxes.ICheckbox;

@@ -1,4 +1,4 @@
-package app;
+package abstractFactoryDp.app;
 
 import abstractFactoryDp.factories.IAbstractFactory;
 import abstractFactoryDp.factories.MacOsFactory;

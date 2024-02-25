@@ -1,4 +1,4 @@
-package WithDI;
+package dependencyInjectionDp.di.consumers;
 
 public interface IConsumer {
 
