@@ -1,16 +1,23 @@
-package builderDp;
+package builderDp.builders;
 
-public class CarBuilder implements Builder {
+import builderDp.cars.Car;
+import builderDp.cars.ECarType;
+import builderDp.components.Engine;
+import builderDp.components.GpsNavigator;
+import builderDp.components.ETransmission;
+import builderDp.components.TripComputer;
 
-    private CarType carType;
+public class CarBuilder implements IBuilder {
+
+    private ECarType carType;
     private int seats;
     private Engine engine;
-    private Transmission transmission;
+    private ETransmission transmission;
     private TripComputer tripComputer;
     private GpsNavigator gpsNavigator;
 
     @Override
-    public void setCarType(CarType carType) {
+    public void setCarType(ECarType carType) {
         this.carType = carType;
     }
 
@@ -25,7 +32,7 @@ public class CarBuilder implements Builder {
     }
 
     @Override
-    public void setTransmission(Transmission transmission) {
+    public void setTransmission(ETransmission transmission) {
         this.transmission = transmission;
     }
 

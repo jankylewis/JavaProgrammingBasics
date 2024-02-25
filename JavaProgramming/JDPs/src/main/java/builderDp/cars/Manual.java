@@ -1,18 +1,23 @@
-package builderDp;
+package builderDp.cars;
+
+import builderDp.components.Engine;
+import builderDp.components.GpsNavigator;
+import builderDp.components.ETransmission;
+import builderDp.components.TripComputer;
 
 public class Manual {
 
-    private final CarType carType;
+    private final ECarType carType;
     private final int seats;
     private final Engine engine;
-    private final Transmission transmission;
+    private final ETransmission transmission;
     private final TripComputer tripComputer;
     private final GpsNavigator gpsNavigator;
 
-    public Manual(CarType carType,
+    public Manual(ECarType carType,
                   int seats,
                   Engine engine,
-                  Transmission transmission,
+                  ETransmission transmission,
                   TripComputer tripComputer,
                   GpsNavigator gpsNavigator) {
 

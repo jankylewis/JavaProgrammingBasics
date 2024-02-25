@@ -1,6 +1,6 @@
-package builderDp;
+package builderDp.components;
 
-public enum Transmission {
+public enum ETransmission {
     SINGLE_SPEED,
     MANUAL,
     AUTOMATIC,

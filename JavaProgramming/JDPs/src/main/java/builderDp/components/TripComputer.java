@@ -1,4 +1,6 @@
-package builderDp;
+package builderDp.components;
+
+import builderDp.cars.Car;
 
 public class TripComputer {
 

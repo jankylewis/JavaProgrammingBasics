@@ -1,16 +1,23 @@
-package builderDp;
+package builderDp.builders;
 
-public class CarManualBuilder implements Builder {
+import builderDp.cars.ECarType;
+import builderDp.cars.Manual;
+import builderDp.components.Engine;
+import builderDp.components.GpsNavigator;
+import builderDp.components.ETransmission;
+import builderDp.components.TripComputer;
 
-    private CarType carType;
+public class CarManualBuilder implements IBuilder {
+
+    private ECarType carType;
     private int seats;
     private Engine engine;
-    private Transmission transmission;
+    private ETransmission transmission;
     private TripComputer tripComputer;
     private GpsNavigator gpsNavigator;
 
     @Override
-    public void setCarType(CarType _carType) {
+    public void setCarType(ECarType _carType) {
         carType = _carType;
     }
 
@@ -25,7 +32,7 @@ public class CarManualBuilder implements Builder {
     }
 
     @Override
-    public void setTransmission(Transmission _transmission) {
+    public void setTransmission(ETransmission _transmission) {
         transmission = _transmission;
     }
 
@@ -37,5 +44,9 @@ public class CarManualBuilder implements Builder {
     @Override
     public void setGpsNavigator(GpsNavigator _gpsNavigator) {
         gpsNavigator = _gpsNavigator;
+    }
+
+    public Manual getResult() {
+        return new Manual(carType, seats, engine, transmission, tripComputer, gpsNavigator);
     }
 }

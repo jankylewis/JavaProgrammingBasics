@@ -1,16 +1,21 @@
-package builderDp;
+package builderDp.cars;
+
+import builderDp.components.Engine;
+import builderDp.components.GpsNavigator;
+import builderDp.components.ETransmission;
+import builderDp.components.TripComputer;
 
 public class Car {
 
-    private final CarType carType;
+    private final ECarType carType;
     private final int seats;
     private final Engine engine;
-    private final Transmission transmission;
+    private final ETransmission transmission;
     private final TripComputer tripComputer;
     private final GpsNavigator gpsNavigator;
     private double fuel = 0;
 
-    public Car(CarType carType, int seats, Engine engine, Transmission transmission, TripComputer tripComputer, GpsNavigator gpsNavigator) {
+    public Car(ECarType carType, int seats, Engine engine, ETransmission transmission, TripComputer tripComputer, GpsNavigator gpsNavigator) {
 
         this.carType = carType;
         this.seats = seats;
@@ -25,7 +30,7 @@ public class Car {
         this.gpsNavigator = gpsNavigator;
     }
 
-    public CarType getCarType() {
+    public ECarType getCarType() {
         return carType;
     }
 
@@ -45,7 +50,7 @@ public class Car {
         return engine;
     }
 
-    public Transmission getTransmission() {
+    public ETransmission getTransmission() {
         return transmission;
     }
 
